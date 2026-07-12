@@ -1,0 +1,23 @@
+{
+  "name": "cascade-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@11.2.2",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "check": "biome check ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.3",
+    "typescript": "^5.0.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}
