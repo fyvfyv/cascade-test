@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Feed</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <template id="slide">
+      <section class="slide">
+        <video class="slide__video" muted playsinline loop preload="metadata"></video>
+        <div class="slide__spinner" hidden></div>
+        <button type="button" class="slide__glyph" hidden aria-label="Play"></button>
+        <div class="slide__error" hidden>
+          <p>Couldn't load video</p><button type="button" class="slide__retry">Retry</button>
+        </div>
+        <div class="slide__meta"><h2 class="slide__title"></h2><p class="slide__author"></p></div>
+        <div class="slide__rail"></div>
+        <div class="slide__progress" aria-label="Seek"></div>
+      </section>
+    </template>
+
+    <noscript>This app requires JavaScript to play videos.</noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
